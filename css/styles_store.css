@@ -260,6 +260,7 @@ padding: 0 5px;
 .rightsection{
 	background-color: #f3f3f3;
 	height: 100%;
+	overflow: auto;
 }
 
 .myselect3{
