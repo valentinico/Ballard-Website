@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ballard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="no">
+
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' type='text/css'>
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link href="css/styles_store.css" rel="stylesheet" type="text/css" />
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+<script src="js/ballard.js"></script> 
+</head>
+
+<body>
+	<header class="blackheader">
+    	<a class="redmenu">MENU</a>
+        <div class="logo"> <img src="img/logo_ballard.svg" alt="" width="250px"/></div>
+   		<form class="myform" role="form">
+        	<input type="email" class="txtinput_black" id="mysearch">
+        </form>
+        <nav class="header_right">
+            <a class="headertext">My Account</a>
+            <div class="lines"></div>
+            <a class="headertext">My Wishlist</a>
+            <div class="lines"></div>
+            <a class="headertext">My Cart</a>
+            <div class="circle_cont"><b class="redcircle">2</b></div>
+            <button type="button" class=" btn-default bt_header">LOGIN</button>
+        </nav>
+    </header>
+    <ol class="breadcrumb">
+        <li><a href="#">Products </a></li>
+        <li><a href="#">Replacements Parts </a></li>
+        <li><a href="#">20” Spinner </a></li> 
+        <li class="active">20” Mike Spinner Pro Chain</li> 
+    </ol>
+    <main class="mycontainer">
+    	<!-- LEFT --> 
+    	<div class="leftsection col-md-2">
+        	<h4 class="left_titles">Shop By Category</h4>            
+                <div class="panel-group" id="accordion">
+                
+                    <div class="panel panel-default">
+                    	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="changeIcon('collapseOne');">
+                            <div class="panel-heading">
+                                <span class="panel-title">12v Yamaha</span>
+                                <span class="more collapseOne">－</span>
+                            </div>
+                        </a>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                            	<ol class="accordionitem">
+                                    <li><a href="#">Raptor</a></li>
+                                    <li><a href="#">700R</a></li>
+                                    <li><a href="#">660R</a></li> 
+                                </ol>
+	                        </div>
+                            <div class="panel-body">
+                            	<ol class="accordionitem">
+                                    <li><a href="#">Raptor</a></li>
+                                    <li><a href="#">700R</a></li>
+                                    <li><a href="#">660R</a></li> 
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                    	<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="changeIcon('collapseTwo');">
+                            <div class="panel-heading">
+                                <span class="panel-title">12v Rally Solstice</span>
+                                <span class="more collapseTwo">＋</span>
+                            </div>
+                        </a>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              	<ol class="accordionitem">
+                                    <li><a href="#">Raptor</a></li>
+                                    <li><a href="#">700R</a></li>
+                                    <li><a href="#">660R</a></li> 
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                    	<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" onclick="changeIcon('collapseThree');">
+                            <div class="panel-heading">
+                                <span class="panel-title">12v Rally Solstice</span>
+                                <span class="more collapseThree">＋</span>
+                            </div>
+                        </a>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                             	<ol class="accordionitem">
+                                    <li><a href="#">Raptor</a></li>
+                                    <li><a href="#">700R</a></li>
+                                    <li><a href="#">660R</a></li> 
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        <!-- RIGHT -->    
+        <div class="rightsection col-md-10">
+        
+        	<div class="rightcontainer">
+            	<span class="mysimple_text_black">FILTER BY: </span>
+                <form class="myform" action="" method="">
+                    <select class="form-control myselect3"><option>Product Name</option></select>
+                    <span class="mysimple_text_black">& </span>
+                    <select class="form-control myselect3"><option>Product Name</option></select>
+                    </select>
+                </form>
+            </div>
+            
+            <div class="rightcontainer">
+            	<div class="right_left">
+	            	<span class="mysimple_text">Items 1 to 30 of 243 total</span>
+                </div>
+                <div class="right_center">
+    	            <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+                </div>
+                <div class="right_right">
+                	<span class="mysimple_text">Per Page </span>
+                    <select class="myselect3 form-control"><option>30</option> <option>60</option> <option>90</option></select>
+	               	<span class="mysimple_text">Show</span>
+                </div>
+            </div>
+            
+            <div class="product_list">
+            	<a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+				
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>
