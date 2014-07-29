@@ -28,6 +28,42 @@ a:hover a:visited a:active {color: #FFFFFF; text-decoration: none; cursor:pointe
 a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:pointer;}
 
 
+.navbar-toggle {
+	position: inherit;
+	float: left;
+	text-align: center;
+	
+	background-image: none;
+	border: 0px solid transparent;
+	border-radius: 0px;
+	width: 95px;
+	height: 95px;
+	background-color: #fd0404;
+	color: #ffffff;
+	
+	margin:0px;
+	padding: 0px;
+	padding-top: 15px;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #fd0404;
+}
+
+
+.navbar-inverse {
+	background-color: #000;
+	border-color: rgba(0,0,0,0.0);
+	border: none;
+}
+
+.container {
+	margin: auto;
+	padding: 0px;
+	width: 100%;
+	min-width: 100%;
+}
+
 
 .blackheader{
 	width:100%;
@@ -35,59 +71,37 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 	float:none;
 	margin:auto;
 	background-color: #000000;
-	display: table;
 }
 
-.redmenu{
-	width: 93px;
-	min-width: 93px;
-	height: 100%;
-	display: table-cell;
-	vertical-align: middle;
-	background-color: #fd0404;
-	color: #ffffff;
-	margin-right: 1%;
-	text-align: center;
-	
-}
+
 
 .logo{
-	width:252px;
-	height:100%;
-	display: table-cell;
-	vertical-align: middle;
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-top: 13px;
-}
 
-.myform{
 	height: 100%;
-	display: table-cell;
-	vertical-align: middle;
-	width: 40%;
-	max-width: 775px;
-	min-width: 100px;
+	float: left;
+	margin-top: 30px;
 }
 
 
 .txtinput_black{
-	width: 100%;
+	width: 40%;
+	float: left;
 	height: 56px;
-	display: table-cell;
-	vertical-align: middle;
 	background: url(../img/search.svg) 99% center no-repeat;
 	background-color: rgba(0,0,0,0);
 	border: solid 2px #424242;
+	margin-top: 23px;
 }
 
 
 
 .header_right{
 	float:right;
-	width: 90%;
+	width: 40%;
 	height: 100%;
 	display: table;
+	margin-top: 25px;
+
 }
 
 
@@ -109,7 +123,7 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 	float: none;
 	border-left: solid 1px #d6d6d6;
 	position: absolute;
-	margin-top: 38px;
+	margin-top: 18px;
 }
 
 .circle_cont{
@@ -145,9 +159,8 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 	background-color: #000;
 	border: solid 2px #fff;
 	
-	float: left;
-	margin-top: 20px;
-	margin-right: 10px;
+	float: right;
+	margin-right: 5px;
 }
 
 .bt_header:hover{
@@ -294,7 +307,7 @@ padding: 0 5px;
 
 
 .rightcontainer{
-	width: 90%;
+	width: 95%;
 	float: none;
 	margin: auto;
 	overflow:auto;
@@ -360,12 +373,12 @@ padding: 0 5px;
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	width: 90%;
+	width: 100%;
 }
 .product{
 	display:inline-block;
     margin:auto;
-	margin:2%
+	margin:1%;
 	
 }
 
@@ -391,3 +404,82 @@ padding: 0 5px;
 	color: #61c4f2;
 }
 
+
+@media only screen and (max-width: 1450px) { /*Small Desktops*/
+	.header_right{	width: 35%;}
+	.bt_header {width: 130px;}
+	.circle_cont {width: 10px; min-width: 10px; padding-bottom: 30px;}
+	.redcircle {margin-left: -20px;}
+
+	.panel-heading {padding: 20px 5px;}
+	.panel-body {padding: 20px 5px}
+	.accordionitem>li {	font-size: 12px;}
+	.accordionitem>li {font-size: 12px;}
+	.more {font-size: 18px; line-height: 0.8;}
+	.rightcontainer {width: 100%;}
+	
+}
+
+@media only screen and (max-width: 1200px) { /*Small Desktops*/
+	.txtinput_black{width: 37%;}
+	.header_right{	width: 30%;}
+	.myselect3 {width: 220px;}
+	
+	.headertext {min-width: 90px;}
+	.bt_header {width: 80px;}
+}
+
+@media only screen and (max-width: 992px) { /*Small Desktops*/
+	.txtinput_black{width: 27%;}
+	
+	.logo{margin-top: 37px;}
+	.logo>img{width: 190px;}
+	
+	
+}
+
+@media only screen and (max-width: 767px) { /*Small Desktops*/
+	.container {padding-left: 0px; padding-right: 15px;}
+	.txtinput_black {width: 90%;margin-left: 5%; margin-top: 0px;}
+	.logo{float:right;}
+	.header_right {width: 100%;}
+	
+	
+	.mobilesearch {
+	width: 90%;
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #fff;
+	}
+	
+	.headertext {
+	width: 100%;
+	border-top: 1px solid #fff;
+	display: block;
+	float: left;
+	height: 40px;
+	padding-top: 7px;
+	}
+	
+	.circle_cont {
+	padding-top: 0;
+	display: block;
+	}
+	
+	.redcircle {
+	margin-left: -70px;
+	margin-top: 87px;
+	}	
+	
+	.bt_header {
+	width: 90%;
+	margin-right: 5%;
+	margin-top: -24px;
+	margin-bottom: 20px;
+	}
+	
+
+		
+	
+}

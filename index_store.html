@@ -17,20 +17,33 @@
 
 <body>
 	<header class="blackheader">
-    	<a class="redmenu">MENU</a>
-        <div class="logo"> <img src="img/logo_ballard.svg" alt="" width="250px"/></div>
-   		<form class="myform" role="form">
-        	<input type="email" class="txtinput_black" id="mysearch">
-        </form>
-        <nav class="header_right">
-            <a class="headertext">My Account</a>
-            <div class="lines"></div>
-            <a class="headertext">My Wishlist</a>
-            <div class="lines"></div>
-            <a class="headertext">My Cart</a>
-            <div class="circle_cont"><b class="redcircle">2</b></div>
-            <button type="button" class=" btn-default bt_header">LOGIN</button>
-        </nav>
+    	<div class = "navbar navbar-inverse navbar-static-top">
+                <div class = "container">
+                    <a class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse" alt=""><h3 class="glyphicon glyphicon-align-justify"></h3></a> <!--MOBILE bt-->
+                    <div class="logo"> <img src="img/logo_ballard.svg" alt="" width="250px"/></div>
+                    <div class = "collapse navbar-collapse navHeaderCollapse">
+                    
+
+                           
+                                	<span class="mobilesearch visible-xs">Search:</span>
+                                    <form><input type="email" class="txtinput_black" id="mysearch"></form>
+                                    <nav class="header_right">
+                                        <a class="headertext">My Account</a>
+                                        <div class="lines hidden-xs"></div>
+                                        <a class="headertext">My Wishlist</a>
+                                        <div class="lines hidden-xs"></div>
+                                        <a class="headertext">My Cart</a>
+                                        <span class="headertext visible-xs"></span>
+                                        <div class="circle_cont"><b class="redcircle">2</b></div>
+                                        <button type="button" class=" btn-default bt_header">LOGIN</button>
+                                    </nav>
+                                
+
+                    
+                    </div>
+                       
+                </div>
+        </div>
     </header>
     <ol class="breadcrumb">
         <li><a href="#">Products </a></li>
@@ -40,7 +53,7 @@
     </ol>
     <main class="mycontainer">
     	<!-- LEFT --> 
-    	<div class="leftsection col-md-2">
+    	<div class="leftsection col-lg-2 col-md-3">
         	<h4 class="left_titles">Shop By Category</h4>            
                 <div class="panel-group" id="accordion">
                 
@@ -107,10 +120,10 @@
                     
                 </div>
             </div>
-            
+        </div>  
             
         <!-- RIGHT -->    
-        <div class="rightsection col-md-10">
+        <div class="rightsection col-lg-10 col-md-9">
         
         	<div class="rightcontainer">
             	<span class="mysimple_text_black">FILTER BY: </span>
@@ -138,9 +151,9 @@
                 </ul>
                 </div>
                 <div class="right_right">
-                	<span class="mysimple_text">Per Page </span>
+                	<span class="mysimple_text visible-lg">Per Page </span>
                     <select class="myselect3 form-control"><option>30</option> <option>60</option> <option>90</option></select>
-	               	<span class="mysimple_text">Show</span>
+	               	<span class="mysimple_text visible-lg">Show</span>
                 </div>
             </div>
             
@@ -193,9 +206,34 @@
                     <div class="mysimple_text">$124.99</div>
                 </a>
 				
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
+                <a class="product">
+                	<img class="img_simple" src="img/img1.jpg" alt="" />
+                    <div class="mysimple_text_black">20" HYPER METRO BMX</div>
+                    <div class="mysimple_text">$124.99</div>
+                </a>
+                
             </div>
             
         </div>
+        
     </main>
 
 </body>
