@@ -13,13 +13,16 @@
 	margin:0px;
 	padding:0px;
 }
-html, body{
+
+body{
+	margin: 0;
+	padding: 0;
 	height: 100%;
-	min-height: 100%;
 	font-family: "Lato","tahoma","verdana","arial","sans-serif";
 	font-size: 16px;
 	font-weight: 300;
-	color:#787878;
+	background-color:#303030;
+	color:#dddddd;
 }
 
 a {color: #FFFFFF; text-decoration: none; cursor:pointer;}
@@ -44,6 +47,24 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 	margin:0px;
 	padding: 0px;
 	padding-top: 15px;
+}
+
+.offcanvas-toggle{
+	position: inherit;
+	float: left;
+	text-align: center;
+	
+	background-image: none;
+	border: 0px solid transparent;
+	border-radius: 0px;
+	width: 95px;
+	height: 95px;
+	background-color: #61c4f2;
+	color: #ffffff;
+	
+	margin:0px;
+	padding: 0px;
+	padding-top: 15px
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
@@ -110,7 +131,7 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 	font-size: 14px;
 	color: #787878;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 500;
 	margin-left: 7px;
 	margin-right: 7px;
 	display: table-cell;
@@ -178,13 +199,6 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 	margin-bottom: 0px
 }
 
-.mycontainer{
-	display:block;
-	position:relative;
-	height: 100%;
-	min-height:100%;
-    min-width:100%;
-}
 
 
 .leftsection{
@@ -195,8 +209,7 @@ a:hover, a:visited, a:active {color: #FFFFFF; text-decoration: none; cursor:poin
 .left_titles{
 	color: #ffffff;
 	font-weight: bolder;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	line-height: 4;
 }
 
 .left_text{
@@ -273,7 +286,6 @@ padding: 0 5px;
 .rightsection{
 	background-color: #f3f3f3;
 	height: 100%;
-	overflow: auto;
 }
 
 .myselect3{
@@ -311,7 +323,7 @@ padding: 0 5px;
 	float: none;
 	margin: auto;
 	overflow:auto;
-	margin-top: 45px;
+	padding-top: 45px;
 	
 }
 
@@ -330,6 +342,7 @@ padding: 0 5px;
 	
 .right_center{
 	width: 33%;
+	min-width: 222px;
 	float: left;
 	margin-top: 3px;
 	text-align: center;
@@ -405,6 +418,55 @@ padding: 0 5px;
 }
 
 
+/*
+* NEW OFF CANVAS
+* 
+*/
+
+#site-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height:100%; 
+}
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+ 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+.show-nav #site-canvas {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+#site-menu {
+  
+  
+}
+
+
+
+@media (max-width: 991px) {
+    
+}
+
+
+
 @media only screen and (max-width: 1450px) { /*Small Desktops*/
 	.header_right{	width: 35%;}
 	.bt_header {width: 130px;}
@@ -420,34 +482,58 @@ padding: 0 5px;
 	
 }
 
-@media only screen and (max-width: 1200px) { /*Small Desktops*/
+@media only screen and (max-width: 1200px) { 
 	.txtinput_black{width: 37%;}
 	.header_right{	width: 30%;}
 	.myselect3 {width: 220px;}
 	
 	.headertext {min-width: 90px;}
-	.bt_header {width: 80px;}
+	.bt_header {width: 80px; margin-right: 10px;margin-left: 10px;}
 }
 
-@media only screen and (max-width: 992px) { /*Small Desktops*/
-	.txtinput_black{width: 27%;}
+@media only screen and (max-width: 992px) {
+	/*bootstrap Breakpoint change*/
+	.navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		margin-top: 100px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 	
-	.logo{margin-top: 37px;}
-	.logo>img{width: 190px;}
 	
 	
-}
-
-@media only screen and (max-width: 767px) { /*Small Desktops*/
-	.container {padding-left: 0px; padding-right: 15px;}
-	.txtinput_black {width: 90%;margin-left: 5%; margin-top: 0px;}
-	.logo{float:right;}
-	.header_right {width: 100%;}
 	
 	
+		/*mobile header menu ADAPTATION*/
 	.mobilesearch {
 	width: 90%;
-	margin-left: 30px;
+	margin-left: 5%;
 	margin-top: 30px;
 	font-size: 18px;
 	color: #fff;
@@ -455,7 +541,8 @@ padding: 0 5px;
 	
 	.headertext {
 	width: 100%;
-	border-top: 1px solid #fff;
+	color: #ffffff;
+	border-top: 1px solid #2E2E2E;
 	display: block;
 	float: left;
 	height: 40px;
@@ -475,11 +562,69 @@ padding: 0 5px;
 	.bt_header {
 	width: 90%;
 	margin-right: 5%;
-	margin-top: -24px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 	}
 	
-
-		
 	
+	
+	.txtinput_black {width: 90%;margin-left: 5%; margin-top: 0px;}
+	
+	.logo{float:right;}
+	
+	
+	.header_right {width: 100%;}
+	
+	
+	
+	.container {padding-left: 0px; padding-right: 15px;}
+	
+	
+	
+	#site-menu {margin-left: -300px; min-width:300px;}
+	.myselect3 {width: 290px;}
+	
+	
+	
+}
+
+@media only screen and (max-width: 767px) { 
+	.bt_header {
+	margin-top: -24px;
+	}
+	.myselect3 {width: 180px;}		
+
+}
+
+@media only screen and (max-width: 550px) {
+	/*tiny header for mobile*/
+	.navbar-inverse { min-height: 60px;}
+	
+	.blackheader {height: 60px;}
+	
+	.logo {	float: right;	margin-right: -15px;	margin-top: 15px;	}
+	
+	.navbar-collapse {margin-top: 50px;}
+
+	.navbar-toggle {width: 60px; height: 60px; padding-top: 0px;}
+	
+	.offcanvas-toggle {width: 60px; height: 60px; padding-top: 0px;}
+	
+	.logo>img{width: 170px;}
+	
+	
+	 
+	.myselect3 {
+	width: 280px;
+	margin-left: 0px;
+	margin-right: 0px;
+	float: none;
+	margin: auto;
+	}
+	
+	.right_center {width: 100%;}
+
+	.rightsection .rightcontainer{text-align: center; padding-top:5px;}
+		
+	.rightcontainer .mysimple_text_black{width: 100%; text-align: center; line-height: 3;}
 }
