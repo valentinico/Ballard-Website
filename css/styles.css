@@ -359,6 +359,11 @@ html, body{
 	
 }
 
+#img_partservice_left .section_left .myform .txt_input{
+	width: 100%;
+	margin-left: 0px;
+}
+
 
 .myclose{
 	width: 100%;
@@ -412,6 +417,10 @@ html, body{
 	margin: auto;
 	text-align: center;
 	max-width: 1000px;
+}
+
+#simple_text_line{
+	margin-top:3%;
 }
 
 
